@@ -1,15 +1,11 @@
- :root {
+:root {
 
 } 
 
 .dark{
-     background-color: rgb(59, 48, 48);
-     color: rgb(255, 255, 255);
+     background-color: rgb(32, 32, 32);
+     color: rgba(202, 202, 202, 0.753);
      
  }
- .light{
-    background-color: rgb(255,255,255);
-    color: #429437d8;
-    --link-color: #543fd7;
- }
+ 
 
