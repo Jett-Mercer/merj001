@@ -11,13 +11,28 @@
   <style>
     </style>
   <body>
-    <script src ="button.JS">
+    <script>
+    var counter = 0
+        function darktheme(){
+             if (counter % 2 == 0){
+                var element = document.body
+                element.classList.toggle("dark") 
+                document.body.style.backgroundColor = element
+                
+             }
+             if (counter % 2 == 1){
+                var element = document.body
+                element.classList.toggle("light") 
+                document.body.style.backgroundColor = element
+            }
+            counter + 1
+}
 
     </script>
     <header>
       <h1>Fifth Generation Programming Languages</h1>
-      <button onclick= "darktheme()" >Toggle Theme</button>
-      <input type = "button" onclick= "darktheme()"/>
+      <button onclick = "darktheme()" >Toggle Theme
+      </button>
     </header>
     <nav>
       <ul>
