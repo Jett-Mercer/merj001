@@ -1,0 +1,20 @@
+:root {
+    --primary-color: rgb(255, 255, 255);
+}
+
+.dark{
+     --primary-color: rgb(0, 0, 0);
+     background-color: rgb(0, 0, 0);
+     --text-color: rgb(255,255,255);
+ }
+ .light {
+    --background-color: rgb(135,0,0);
+    --text-color: #121416d8;
+    --link-color: #543fd7;
+ }
+
+ body {
+    --background-color: rgb(135,0,0);
+    --text-color: #121416d8;
+    --link-color: #543fd7;
+ }
