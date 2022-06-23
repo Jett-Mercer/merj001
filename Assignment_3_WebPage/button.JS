@@ -1,11 +1,23 @@
-function saveName(name){
-    var user_name = document.getElementsByName(name)
-    alert(name)
+
+function getName(){
+    const queryString = window.location.search
+    const urlparams = new URLSearchParams(queryString)
+    const user_name = urlparams.get('user_name')
+    var my_name = JSON.parse(localStorage.getItem('user_name'))
+    alert(my_name)
 }
 
-function getName(name){
-    alert(name)
+function saveName(){
+    my_name = document.getElementsByName('user_name')[0].value
+     alert(my_name)
+
+    const queryString = window.location.search
+    const urlparams = new URLSearchParams(queryString)
+   // const user_name = urlparams.get('user_name')
+    localStorage.setItem('user_name' , my_name)
 }
+
+
 
 
 
