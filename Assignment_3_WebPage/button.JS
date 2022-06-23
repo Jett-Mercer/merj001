@@ -35,13 +35,25 @@ function getTheme(){
         }
 
 }
-
+var counter2 = 0
 function openPicture(imageID){
+    //var counter2 = JSON.parse(localStorage.getItem('counter2'))
+    counter2 = counter2 + 1
     if (imageID == 'Image 1'){
-        var Image1 = "http://www.outgrabe.net/bird00.jpg"
-       document.getElementById("BImage1").src 
+       image = document.getElementById("BImage1")
+       if (counter2 % 2 == 1){
+        image.src = "http://www.outgrabe.net/bird00.jpg"
     }
+       alert(imageID)
+       document.get
+    }
+    if (counter2 % 2 == 0){
+        image = document.getElementById("BImage1")
+        image.src = ""
+     }
+     alert(counter2)
+     //localStorage.setItem('counter2' , counter2)
     
     
-    alert(imageID)
+    //alert(imageID)
 }
