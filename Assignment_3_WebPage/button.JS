@@ -36,6 +36,12 @@ function getTheme(){
 
 }
 
-function openPicture(){
+function openPicture(imageID){
+    if (imageID == 'Image 1'){
+        var Image1 = "http://www.outgrabe.net/bird00.jpg"
+       document.getElementById("BImage1").src 
+    }
     
+    
+    alert(imageID)
 }

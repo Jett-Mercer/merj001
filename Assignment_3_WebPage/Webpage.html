@@ -11,6 +11,10 @@
   <style>
     </style>
   <body onload="getTheme()">
+    <noscript>
+    <img type = "image" id = "BImage1" ><img src = "http://www.outgrabe.net/bird00.jpg" >/>
+    <img id = "BImage 2" src = "http://www.outgrabe.net/bird01.jpg"/>
+  </noscript>
     
     <script>
 
@@ -71,11 +75,11 @@
       <aside>
         <h2>Related</h2>
         <ul>
-          <li><button id = "Image 1">Image 1</button><a href="#"></a></li>
-          <li><button>Image 2</button><a href="#"></a></li>
-          <li><button>Image 3</button><a href="#"></a></li>
-          <li><button>Image 4</button><a href="#"></a></li>
-          <li><button>Image 5</button><a href="#"></a></li>
+          <li><button id = 'Image 1' onclick="openPicture('Image 1')">Image 1 </button><a href="#"></a></li>
+          <li><button id = 'Image 2' onclick="openPicture('Image 2')">Image 2</button><a href="#"></a></li>
+          <li><button id = 'Image 3' onclick="openPicture('Image 3')">Image 3</button><a href="#"></a></li>
+          <li><button id = 'Image 4' onclick="openPicture('Image 4')">Image 4</button><a href="#"></a></li>
+          <li><button id = 'Image 5' onclick="openPicture('Image 5')">Image 5</button><a href="#"></a></li>
         </ul>
       </aside>
     </main>
