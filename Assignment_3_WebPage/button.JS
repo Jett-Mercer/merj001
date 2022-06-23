@@ -48,78 +48,93 @@ function openPicture(imageID){
        image = document.getElementById("BImage1")
        
         image.src = "http://www.outgrabe.net/bird00.jpg"
+
+        document.getElementById('img1Txt').textContent = 'Pardalote by fir0002 (CC-by-NC)';
         }
     
-       alert(imageID)
+       //alert(imageID)
       
     }
     if (imageID == 'Image 2'){
         counter3 = counter3 + 1
-        if (counter2 % 2 == 1){
+        if (counter3 % 2 == 1){
             image = document.getElementById("BImage2")
             
              image.src = "http://www.outgrabe.net/bird01.jpg"
+
+             document.getElementById('img2Txt').textContent = 'Purple swamp hen by Toby Hudson (CC-by-SA)';
              }
 
-        alert(imageID)
+       // alert(imageID)
         
      }
      if (imageID == 'Image 3'){
         counter4 = counter4 + 1
-        if (counter2 % 2 == 1){
+        if (counter4 % 2 == 1){
             image = document.getElementById("BImage3")
             
              image.src = "http://www.outgrabe.net/bird02.jpg"
+
+             document.getElementById('img3Txt').textContent = 'White-headed Stilt by JJ Harrison (CC-by-SA)';
              }
      
-        alert(imageID)
+        //alert(imageID)
        
      }
      if (imageID == 'Image 4'){
         counter5 = counter5 + 1
-        if (counter2 % 2 == 1){
+        if (counter5 % 2 == 1){
             image = document.getElementById("BImage4")
             
              image.src = "http://www.outgrabe.net/bird03.jpg"
+
+             document.getElementById('img4Txt').textContent = 'Inland Thornbill by Peter Jacobs (CC-by-SA)';
              }
      
-        alert(imageID)
+        //alert(imageID)
         
      }
      if (imageID == 'Image 5'){
         counter6 = counter6 + 1
-        if (counter2 % 2 == 1){
+        if (counter6 % 2 == 1){
             image = document.getElementById("BImage5")
             
              image.src = "http://www.outgrabe.net/bird04.jpg"
+
+             document.getElementById('img5Txt').textContent = 'Rose Robin by JJ Harrison (CC-by-SA)';
              }
      
-        alert(imageID)
+        //alert(imageID)
         
      }
     if (counter2 % 2 == 0 ){
         image = document.getElementById("BImage1")
         image.src = ""
+        document.getElementById('img1Txt').textContent = '';
      }
      if (counter3 % 2 == 0 ){
         image = document.getElementById("BImage2")
         image.src = ""
+        document.getElementById('img2Txt').textContent = '';
      }
      if (counter4 % 2 == 0 ){
         image = document.getElementById("BImage3")
         image.src = ""
+        document.getElementById('img3Txt').textContent = '';
      }
      if (counter5 % 2 == 0 ){
         image = document.getElementById("BImage4")
         image.src = ""
+        document.getElementById('img4Txt').textContent = '';
      }
      if (counter6 % 2 == 0 ){
         image = document.getElementById("BImage5")
         image.src = ""
+        document.getElementById('img5Txt').textContent = '';
      }
 
      
-     alert(counter2)
+     //alert(counter2)
      //localStorage.setItem('counter2' , counter2)
     
     
