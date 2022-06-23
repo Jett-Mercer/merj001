@@ -36,21 +36,89 @@ function getTheme(){
 
 }
 var counter2 = 0
+var counter3 = 0
+var counter4 = 0
+var counter5 = 0
+var counter6 = 0
 function openPicture(imageID){
     //var counter2 = JSON.parse(localStorage.getItem('counter2'))
-    counter2 = counter2 + 1
-    if (imageID == 'Image 1'){
+    if (imageID == 'Image 1') {
+        counter2 = counter2 + 1
+        if (counter2 % 2== 1){
        image = document.getElementById("BImage1")
-       if (counter2 % 2 == 1){
+       
         image.src = "http://www.outgrabe.net/bird00.jpg"
-    }
+        }
+    
        alert(imageID)
-       document.get
+      
     }
-    if (counter2 % 2 == 0){
+    if (imageID == 'Image 2'){
+        counter3 = counter3 + 1
+        if (counter2 % 2 == 1){
+            image = document.getElementById("BImage2")
+            
+             image.src = "http://www.outgrabe.net/bird01.jpg"
+             }
+
+        alert(imageID)
+        
+     }
+     if (imageID == 'Image 3'){
+        counter4 = counter4 + 1
+        if (counter2 % 2 == 1){
+            image = document.getElementById("BImage3")
+            
+             image.src = "http://www.outgrabe.net/bird02.jpg"
+             }
+     
+        alert(imageID)
+       
+     }
+     if (imageID == 'Image 4'){
+        counter5 = counter5 + 1
+        if (counter2 % 2 == 1){
+            image = document.getElementById("BImage4")
+            
+             image.src = "http://www.outgrabe.net/bird03.jpg"
+             }
+     
+        alert(imageID)
+        
+     }
+     if (imageID == 'Image 5'){
+        counter6 = counter6 + 1
+        if (counter2 % 2 == 1){
+            image = document.getElementById("BImage5")
+            
+             image.src = "http://www.outgrabe.net/bird04.jpg"
+             }
+     
+        alert(imageID)
+        
+     }
+    if (counter2 % 2 == 0 ){
         image = document.getElementById("BImage1")
         image.src = ""
      }
+     if (counter3 % 2 == 0 ){
+        image = document.getElementById("BImage2")
+        image.src = ""
+     }
+     if (counter4 % 2 == 0 ){
+        image = document.getElementById("BImage3")
+        image.src = ""
+     }
+     if (counter5 % 2 == 0 ){
+        image = document.getElementById("BImage4")
+        image.src = ""
+     }
+     if (counter6 % 2 == 0 ){
+        image = document.getElementById("BImage5")
+        image.src = ""
+     }
+
+     
      alert(counter2)
      //localStorage.setItem('counter2' , counter2)
     
