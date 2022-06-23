@@ -42,5 +42,11 @@ h2 {
  .dark h3{
     color: var(--secondary-colorD);
  }
+
+ @media(min-width:1px){
+    img#BImage1{
+        display: none; 
+    }
+ }
  
 
