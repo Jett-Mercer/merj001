@@ -2,19 +2,23 @@
 function getName(){
     const queryString = window.location.search
     const urlparams = new URLSearchParams(queryString)
-    const user_name = urlparams.get('user_name')
-    var my_name = JSON.parse(localStorage.getItem('user_name'))
-    alert(my_name)
+    // const user_name = urlparams.get('user_name')
+   // var my_name = JSON.parse(localStorage.getItem('my_name'))
+
 }
 
 function saveName(){
     my_name = document.getElementsByName('user_name')[0].value
-     alert(my_name)
+    //alert(my_name)
 
-    const queryString = window.location.search
-    const urlparams = new URLSearchParams(queryString)
+   // const queryString = window.location.search
+    //const urlparams = new URLSearchParams(queryString)
    // const user_name = urlparams.get('user_name')
-    localStorage.setItem('user_name' , my_name)
+    localStorage.setItem('my_name' , my_name)
+    alert(my_name)
+    const my_savedName = JSON.parse(localStorage.getItem('my_name'))
+    alert(my_savedName)
+    document.getElementById('hello_user').textContent = ("hello" + milk)
 }
 
 

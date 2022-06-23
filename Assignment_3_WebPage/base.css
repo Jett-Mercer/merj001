@@ -31,6 +31,10 @@ p1{
     font-size: 20px;
     color: var(--copyright-colorL);
  }
+hwelcome{
+    text-align: right;
+    color: var(--heading-colorL);
+}
 
 
 
@@ -51,6 +55,10 @@ p1{
     font-size: 20px;
     color: var(--copyright-colorD);
  }
+.dark hwelcome{
+    text-align: right;
+    color: var(--heading-colorD);
+}
 
  /* @media(min-width:1px){
     img#BImage1{
