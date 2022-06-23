@@ -2,9 +2,10 @@
 
 --primary-colorL: rgb(255, 255, 255);
 --secondary-colorL:rgb(0,0,0);
---bg-colorL:rgb(255, 255, 255);
+--bg-colorL:rgb(245, 245, 245);
 --font-colorL:rgb(44, 44, 44);
 --heading-colorL:rgb(14, 14, 14);
+--copyright-colorL: rgb(0, 0, 0);
 
 
 
@@ -13,6 +14,7 @@
 --bg-colorD: rgb(32, 32, 32);
 --font-colorD:rgba(196, 196, 196, 0.74);
 --heading-colorD:rgb(230, 115, 115);
+--copyright-colorD: rgb(255, 255, 255);
     } 
 
 body{
@@ -25,7 +27,10 @@ h1{
 h2 {
     color: var(--heading-colorL);
 }
-
+p1{
+    font-size: 20px;
+    color: var(--copyright-colorL);
+ }
 
 
 
@@ -41,6 +46,10 @@ h2 {
  }
  .dark h3{
     color: var(--secondary-colorD);
+ }
+ .dark p1{
+    font-size: 20px;
+    color: var(--copyright-colorD);
  }
 
  /* @media(min-width:1px){

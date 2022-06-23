@@ -1,3 +1,20 @@
+function saveName(name){
+    var user_name = document.getElementsByName(name)
+    alert(name)
+}
+
+function getName(name){
+    alert(name)
+}
+
+
+
+
+
+
+
+
+
 
 function darktheme(){
     var counter = 0
