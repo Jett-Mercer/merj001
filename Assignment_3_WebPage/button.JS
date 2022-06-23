@@ -35,3 +35,7 @@ function getTheme(){
         }
 
 }
+
+function openPicture(){
+    
+}

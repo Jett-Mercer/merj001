@@ -3,7 +3,7 @@
 --primary-colorL: rgb(255, 255, 255);
 --secondary-colorL:rgb(0,0,0);
 --bg-colorL:rgb(255, 255, 255);
---font-colorL:rgb(0,0,0);
+--font-colorL:rgb(44, 44, 44);
 --heading-colorL:rgb(14, 14, 14);
 
 
@@ -11,12 +11,13 @@
 --primary-colorD:rgb(250, 153, 153);
 --secondary-colorD:rgb(253, 183, 183);
 --bg-colorD: rgb(32, 32, 32);
---font-colorD:rgba(204, 204, 204, 0.74);
+--font-colorD:rgba(196, 196, 196, 0.74);
 --heading-colorD:rgb(230, 115, 115);
     } 
 
 body{
     background-color: var(--bg-colorL);
+    color: var(--font-colorL);
 }
 h1{
     color: var(--heading-colorL);
@@ -25,17 +26,18 @@ h2 {
     color: var(--heading-colorL);
 }
 
+
+
+
 .dark {
     background-color: var(--bg-colorD);
-     color: var(--font-colorD);
-    
-    
+    color: var(--font-colorD);
  }
  .dark h1{
     color: var(--heading-colorD);
  }
  .dark h2{
-color: var(--primary-colorD);
+    color: var(--primary-colorD);
  }
  .dark h3{
     color: var(--secondary-colorD);
