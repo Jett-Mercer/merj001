@@ -12,6 +12,7 @@ function darktheme(){
 
     if (counter % 2 == 1){
         element.classList.remove("dark") 
+        element.classList.add(":root")
     }
     document.body.style.backgroundColor = element
 
