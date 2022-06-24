@@ -1,28 +1,31 @@
 
-function getName(name){
+function getName(){
     const queryString = window.location.search
     const urlparams = new URLSearchParams(queryString)
     // const user_name = urlparams.get('user_name')
    var my_name = localStorage.getItem('my_name')
-   document.getElementById('hello_user').textContent = my_name
-   alert(my_name + "good job")
-   document.getElementsByName('user_name').value = my_name
+  var change = document.getElementById('changeplz')
+  change.innerHTML= my_name
+
+
+   var milk = document.querySelector("input")
+   milk.setAttribute('name' ,str(my_name))
 }
 
 function saveName(){
     my_name = document.getElementsByName('user_name')[0].value
     
-    //alert(my_name)
-    document.getElementById('hello_user').textContent = ("hello" + my_name)
-   // const queryString = window.location.search
-    //const urlparams = new URLSearchParams(queryString)
-   // const user_name = urlparams.get('user_name')
+
+    document.getElementById('hello_user').textContent = "hello"
+    document.getElementById('changeplz').textContent = "hello"
+
     localStorage.setItem('my_name' , my_name)
-    alert(my_name)
-    const my_savedName = localStorage.getItem('my_name')
-    alert(my_savedName)
-    document.getElementById('hello_user').textContent = "hello" + my_name
+    var saved_name = localStorage.getItem('my_name')
+    alert(saved_name)
+    var change = document.getElementById('changeplz')
+  change.innerHTML = my_name
 }
+
 
 
 
