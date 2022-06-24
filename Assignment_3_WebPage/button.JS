@@ -1,24 +1,27 @@
 
-function getName(){
+function getName(name){
     const queryString = window.location.search
     const urlparams = new URLSearchParams(queryString)
     // const user_name = urlparams.get('user_name')
-   // var my_name = JSON.parse(localStorage.getItem('my_name'))
-
+   var my_name = localStorage.getItem('my_name')
+   document.getElementById('hello_user').textContent = my_name
+   alert(my_name + "good job")
+   document.getElementsByName('user_name').value = my_name
 }
 
 function saveName(){
     my_name = document.getElementsByName('user_name')[0].value
+    
     //alert(my_name)
-
+    document.getElementById('hello_user').textContent = ("hello" + my_name)
    // const queryString = window.location.search
     //const urlparams = new URLSearchParams(queryString)
    // const user_name = urlparams.get('user_name')
     localStorage.setItem('my_name' , my_name)
     alert(my_name)
-    const my_savedName = JSON.parse(localStorage.getItem('my_name'))
+    const my_savedName = localStorage.getItem('my_name')
     alert(my_savedName)
-    document.getElementById('hello_user').textContent = ("hello" + milk)
+    document.getElementById('hello_user').textContent = "hello" + my_name
 }
 
 
@@ -40,11 +43,11 @@ function darktheme(){
 
     if (counter % 2 == 0){
         var element = document.body
-        element.classList.toggle("dark") 
+        element.classList.toggle("darktheme") 
     }
 
     if (counter % 2 == 1){
-        element.classList.remove("dark") 
+        element.classList.remove("darktheme") 
         element.classList.add(":root")
     }
     document.body.style.backgroundColor = element
@@ -59,12 +62,12 @@ function getTheme(){
     var counter = JSON.parse(localStorage.getItem('counter'))
     if (counter % 2 == 0){
         var element = document.body
-        element.classList.toggle("dark") 
+        element.classList.toggle("darktheme") 
 
     }
 
     if (counter % 2 == 1){
-            element.classList.remove("dark") 
+            element.classList.remove("darktheme") 
         }
 
 }
