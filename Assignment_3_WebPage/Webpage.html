@@ -4,20 +4,20 @@
     <meta charset="utf-8" />
     <title>Merjr001 Assignment_3 5GL Page</title>
     <link rel="stylesheet" href="base.css" />
-    <script src ="button.JS" >
+    <script src ="button.JS"  >
 
     </script>
   </head>
   <style>
     </style>
-  <body onload="getTheme()" onload="getName()">
+  <body onload = "setName()" onload="getTheme()">
     
     <script>
 
     </script>
     <header>
-      <h1>Fifth Generation Programming Languages</h1>
-      <hWelcome id = "hello_user"></hWelcome>
+      <h4 id = "hello_user" ></h4>
+      <h1 >Fifth Generation Programming Languages</h1>
       <button onclick = "darktheme()" >Toggle Theme
       </button>
     </header>
@@ -29,7 +29,7 @@
         <li><a href="#">Contact</a></li>
       </ul>
       <form name = "inputForm">
-        <input type="text" name="user_name" placeholder="Enter your name!" onload="getName()" onsubmit="saveName()"/>
+        <input type="text" name="user_name" placeholder="Enter your name!"/>
         <button type="submit" onclick="saveName()">Apply!</button>
       </form>
     </nav>

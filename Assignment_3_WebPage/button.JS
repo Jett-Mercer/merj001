@@ -1,30 +1,53 @@
 
-function getName(){
+/* function getName(){
     const queryString = window.location.search
     const urlparams = new URLSearchParams(queryString)
     // const user_name = urlparams.get('user_name')
    var my_name = localStorage.getItem('my_name')
-  var change = document.getElementById('changeplz')
+  document.getElementById('change').InnerHTML= my_name
   change.innerHTML= my_name
 
 
    var milk = document.querySelector("input")
    milk.setAttribute('name' ,str(my_name))
+} */
+
+
+function setName(){
+    
+
+    var counter = JSON.parse(localStorage.getItem('counter'))
+    var nameCounter = counter
+
+    var my_name = localStorage.getItem('my_name')
+    var change = document.getElementById('hello_user')
+    change.innerHTML= "Hello " + my_name
+
+    getTheme()
+
+   // var milk = document.querySelector("input")
+ //  milk.setAttribute('name' , my_name)
+
+    //var milk = document.querySelector("input")
+    //milk.setAttribute('user_name' ,my_name)
 }
 
 function saveName(){
     my_name = document.getElementsByName('user_name')[0].value
     
 
-    document.getElementById('hello_user').textContent = "hello"
-    document.getElementById('changeplz').textContent = "hello"
 
     localStorage.setItem('my_name' , my_name)
+    localStorage.setItem("namesTheme", counter)
     var saved_name = localStorage.getItem('my_name')
-    alert(saved_name)
-    var change = document.getElementById('changeplz')
-  change.innerHTML = my_name
+    var counter = JSON.parse(localStorage.getItem('counter'))
 }
+
+function getNamesTheme(){
+localStorage
+}
+
+
 
 
 

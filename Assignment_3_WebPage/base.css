@@ -30,9 +30,10 @@ p1{
     font-size: 20px;
     color: var(--copyright-colorL);
  }
-hwelcome{
-    text-align: right;
+h4{
+    text-align: center;
     color: var(--heading-colorL);
+    font-size:35px;
 }
 
 
@@ -54,8 +55,8 @@ hwelcome{
     font-size: 20px;
     color: var(--copyright-colorD);
  }
-.darktheme hwelcome{
-    text-align: right;
+.darktheme h4{
+    text-align: center;
     color: var(--heading-colorD);
 }
 
