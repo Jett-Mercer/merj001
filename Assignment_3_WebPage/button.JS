@@ -1,18 +1,4 @@
 
-/* function getName(){
-    const queryString = window.location.search
-    const urlparams = new URLSearchParams(queryString)
-    // const user_name = urlparams.get('user_name')
-   var my_name = localStorage.getItem('my_name')
-  document.getElementById('change').InnerHTML= my_name
-  change.innerHTML= my_name
-
-
-   var milk = document.querySelector("input")
-   milk.setAttribute('name' ,str(my_name))
-} */
-
-
 function setName(){
     
 
@@ -25,11 +11,6 @@ function setName(){
 
     getTheme()
 
-   // var milk = document.querySelector("input")
- //  milk.setAttribute('name' , my_name)
-
-    //var milk = document.querySelector("input")
-    //milk.setAttribute('user_name' ,my_name)
 }
 
 function saveName(){
