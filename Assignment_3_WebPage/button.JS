@@ -24,22 +24,6 @@ function saveName(){
     var counter = JSON.parse(localStorage.getItem('counter'))
 }
 
-function getNamesTheme(){
-localStorage
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 function darktheme(){
@@ -176,10 +160,4 @@ function openPicture(imageID){
         document.getElementById('img5Txt').textContent = '';
      }
 
-     
-     //alert(counter2)
-     //localStorage.setItem('counter2' , counter2)
-    
-    
-    //alert(imageID)
 }
